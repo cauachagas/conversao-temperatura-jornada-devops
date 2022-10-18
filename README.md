@@ -15,3 +15,5 @@ docker container run -d -p 8080:8080 cauachagas/conversao-temperatura
 ```
 
 Desta forma ao acessar [localhost:8080](localhost:8080) você pode utilizar a aplicação.
+
+![](https://drive.google.com/uc?export=view&id=1wmF_Fk-ShMIWrea5BBzz6w-5lDPF6r_J)
