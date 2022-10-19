@@ -20,3 +20,20 @@ docker container run -d -p 8080:8080 cauachagas/conversao-temperatura
 Desta forma ao acessar [localhost:8080](localhost:8080) você pode utilizar a aplicação.
 
 ![](https://drive.google.com/uc?export=view&id=1wmF_Fk-ShMIWrea5BBzz6w-5lDPF6r_J)
+
+
+### Rodando com Kubernetes
+
+Primeiro é preciso criar um cluster Kubernetes
+
+```k3d cluster create meucluster -p "82:30001@loadbalancer"```
+
+onde `meucluster` é o nome do cluster, onde a porta 82 da nossa máquina escuta a porta 30001 do cluster.
+
+Depois é preciso navegar para src. Com o comando
+
+`kubectl apply -f k8s/`
+
+é criado a menor unidade Kubernetes, chamado de pod.
+
+![](https://drive.google.com/uc?export=view&id=18pysr0_ZagrhKnB8mAxBdDMg-kHX8fff)
